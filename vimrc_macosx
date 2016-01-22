@@ -1,0 +1,45 @@
+syntax on
+set nowrap
+
+" Spell
+set spelllang=en
+
+" Search
+set hlsearch
+set incsearch
+
+" Ruler (http://superuser.com/questions/222188/enable-bottom-right-numbers-in-vim)
+set ruler
+
+" Indent
+set autoindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+" Mouse
+"set ttymouse=xterm2
+set mouse=n
+
+" Enhanced Commentify    <M-c> = <A-c>
+"imap <M-c> <Esc><Plug>Traditionalji
+"vmap <M-c> <Plug>VisualFirstLine
+
+" TagList Script
+let Tlist_Use_Right_Window = 1  " Put Tlist to the right
+
+" Filetype plugin
+filetype plugin indent on
+
+" Code folding
+"set fdm=syntax
+
+" Map
+map <F5> <Esc>:NERDTreeToggle<CR>
+"map <F6> <Esc>:BufExplorer<CR>
+map <F6> <Esc>:TlistToggle<CR>
+
+" Don't use *.swp files (to reduce writes on SSD)
+set noswapfile
+
